@@ -1,0 +1,151 @@
+/* RESET -------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f7f8;
+}
+
+/* COLORI ------------------------------------*/
+
+.color-azure {
+    background-color: #5faee2;
+}
+
+.color-viola {
+    background-color: #8508b6;
+}
+
+.color-rose {
+    background-color: #cc30aa;
+}
+
+.color-green {
+    background-color: #23c091;
+}
+
+.color-orange {
+    background-color: #e28e21;
+}
+
+.color-yellow {
+    background-color: #8cc013;
+}
+
+/* HEADER -----------------------------------------------------*/
+
+header, main {
+    background-color: #ffffff;
+}
+
+header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header img {
+    margin: 10px 0 10px 20px;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+/* MAIN --------------------------------------------------------*/
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* PULSANTI ---------------------------*/
+
+#pulsanti {
+    padding: 16px 50px 10px;
+    border-bottom: 2px solid #f5f7f8;
+}
+
+#pulsanti a {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 7px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#add-task, span.label-p {
+    color: #ffffff;
+}
+
+#add-section {
+    border: 1px solid #c0c0c0;
+    color: #c0c0c0;
+}
+
+/* ---------------------------*/
+
+section {
+    padding: 35px 50px 0;
+}
+
+section:last-child {
+    padding-bottom: 35px;
+}
+
+section * {
+    vertical-align: middle;
+}
+
+section p {
+    margin-bottom: 7px;
+}
+
+.active-list-icon {
+    transform: rotateX(60deg);
+}
+
+span {
+    display: inline-block;
+}
+
+
+section p {
+    font-size: 17px;
+}
+
+span.label-p {
+    padding: 7px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+
+/* LIKE - DIS-LIKE -----------------*/
+
+span.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 11px;
+    margin: 10px 10px 10px 0;
+}
+
+span.like {
+    border: 1px solid #23c091;
+    color: #23c091;
+    padding: 1px;
+}
+
+span.dis-like {
+    border: 1px solid #f55027;
+    color: #f55027;
+    padding: 3px;
+    /* font-size: 20px; */
+}
