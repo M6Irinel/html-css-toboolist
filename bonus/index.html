@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toboolist</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="css/cr-style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.png" alt="Lofo Toboolist">
+
+        <h1>Toboolist</h1>
+    </header>
+
+    <main>
+
+        <div id="pulsanti">
+            <div class="color-azure" id="add-task" >Add Task</div>
+
+            <div class="color-white" id="add-section" >Add Section</div>
+        </div>
+
+        <div id="main">
+
+            <div>
+                <input id="new-task" type="checkbox"></input>
+                <label for="new-task"><span class="active-list-icon">▼</span> New Task</label>
+
+                <div id="insert_task" style="--p:1;">
+                    <p><span class="like circle" >&check;</span>Quarterly Newsletter<span
+                            class="label-p color-azure" id="be">Editorial</span></p>
+                </div>
+            </div>
+
+            <div>
+                <input id="today" type="checkbox"></input>
+                <label for="today"><span class="active-list-icon">▼</span> Today</label>
+
+                <div style="--p:4;">
+                    <p><span class="like circle">&check;</span>Recruiting blog post<span
+                            class="label-p color-azure">Editorial</span></p>
+
+                    <p><span class="like circle" id="te">&check;</span>Mobile app luaunch<span class="label-p color-viola" id="ve">Q1
+                            Goals</span></p>
+
+                    <p><span class="dis-like circle" id="fe">X</span>Interview John H.<span
+                            class="label-p color-green" id="ge">Recruiting</span></p>
+
+                    <p><span class="like circle">&check;</span>Summit update to mobiile storefronts<span
+                            class="label-p color-orange" id="oe">Mobile</span></p>
+
+                </div>
+            </div>
+
+            <div>
+                <input id="upcoming" type="checkbox"></input>
+                <label for="upcoming"><span class="active-list-icon">▼</span> Upcoming</label>
+
+                <div style="--p:4;">
+                    <p><span class="dis-like circle">X</span>Schedule meeting with Alex</p>
+
+                    <p><span class="like circle">&check;</span>Homepage refresh<span
+                            class="label-p color-rose" id="re">Website</span></p>
+
+                    <p><span class="like circle">&check;</span>Onboard new Sales team members<span
+                            class="label-p color-yellow" id="ye">Sales</span></p>
+
+                    <p><span class="like circle">&check;</span>Review editorial calendar<span
+                            class="label-p color-azure">Editorial</span></p>
+
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    
+    <div id="creazione">
+        <div id="chiudi">X</div>
+        <h3>Crea nuovo Task</h3>
+        <div id="testo-div">
+            <p>Inserisci una fraze breve</p>
+            <div>
+                <input id="testo" type="text" required minlength="5" maxlength="30">
+                <div>//</div>
+            </div>
+        </div>
+        <div id="flex">
+            <div id="tf">
+                <div id="t">&check;</div>
+                <div id="f">&cross;</div>
+            </div>
+            <div id="labels">
+                <div id="b">Education</div>
+                <div id="g">Recruiting</div>
+                <div id="r">Website</div>
+                <div id="o">Mobile</div>
+                <div id="v">Q1 Goals</div>
+                <div id="y">Sales</div>
+            </div>
+        </div>
+        <div id="crea">CREA</div>
+
+    </div>
+    
+    <script src="js/java.js"></script>
+</body>
+
+</html>

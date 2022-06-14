@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#creazione {
+    min-width: 250px;
+    max-width: 600px;
+    background-color: rgb(185, 185, 185);
+    margin: auto;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+/* PULSANTE QIUDI FINESTRA */
+#creazione #chiudi {
+    float: right;
+    user-select: none;
+    cursor: pointer;
+    width: 43px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* TITOLO FINESTRA */
+#creazione h3 {
+    margin-bottom: 20px;
+}
+
+/* ZONA SCRITTURA */
+#creazione #testo-div {
+    width: 100%;
+}
+
+#creazione #testo-div > div {
+    position: relative;
+    box-shadow: 3px 3px 2px #434343;
+}
+
+/* INPUT ZONA SCRITTURA */
+#testo-div > div > input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* PULSANTE CANCELLA TESTO DALLA INPUT */
+#creazione #testo-div > div > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* pulsanti scelta T or F */
+#tf {
+    display: inline-block;
+    min-width: 50px;
+    margin-top: 10px;
+}
+
+#tf div {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#t {
+    border: 3px solid #23c091;
+    color: #23c091;
+    margin-bottom: 10px;
+}
+
+#f {
+    border: 3px solid #f55027;
+    color: #f55027;
+}
+
+/* LABEL DELLA FINESTRA CREAZIONE */
+
+#flex {
+    display: flex;
+}
+
+#labels {
+    display: inline-block;
+    width: 100%;
+    min-width: 130px;
+    padding: 20px;
+    text-align: center;
+}
+
+#labels * {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px #434343;
+}
+
+#b {
+    background-color: #5faee2;
+}
+#g {
+    background-color: #23c091;
+}
+#v {
+    background-color: #8508b6;
+}
+#r {
+    background-color: #cc30aa;
+}
+#o {
+    background-color: #e28e21;
+}
+#y {
+    background-color: #8cc013;
+}
+
+/* CREA */
+
+#crea {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px #434343;
+    cursor: pointer;
+}
