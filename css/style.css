@@ -89,19 +89,20 @@ main {
 
 /* ---------------------------*/
 
-section {
+ul {
     padding: 35px 50px 0;
 }
 
-section:last-child {
+ul:last-child {
     padding-bottom: 35px;
 }
 
-section * {
+ul * {
     vertical-align: middle;
+    list-style: none;
 }
 
-section p {
+ul li {
     margin-bottom: 7px;
 }
 
@@ -114,7 +115,7 @@ span {
 }
 
 
-section p {
+ul li {
     font-size: 17px;
 }
 
@@ -147,5 +148,4 @@ span.dis-like {
     border: 1px solid #f55027;
     color: #f55027;
     padding: 3px;
-    /* font-size: 20px; */
 }
