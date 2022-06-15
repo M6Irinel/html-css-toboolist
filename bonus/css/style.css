@@ -65,6 +65,7 @@ main {
 
 #main {
     padding: 25px 50px 50px;
+    min-height: 535px;
 }
 
 /* PULSANTI ---------------------------*/
@@ -85,6 +86,10 @@ main {
 
 #add-task, span.label-p {
     color: #ffffff;
+}
+
+#add-task {
+    border: 1px solid #5faee2;
 }
 
 #add-section {
@@ -152,7 +157,7 @@ span.dis-like {
 
 /* ********* */
 
-input:not(#testo) {
+input:not(.tes) {
     display: none;
 }
 

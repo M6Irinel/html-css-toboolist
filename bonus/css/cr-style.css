@@ -7,23 +7,50 @@
 
 #creazione {
     min-width: 250px;
-    max-width: 600px;
+    max-width: 480px;
     background-color: rgb(185, 185, 185);
     margin: auto;
     padding: 20px;
     border-radius: 35px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* SELETORI IN COMUNE ------------------------------- */
+.cancel_task, #nome_etichetta, #crea, #labels, #labels *, #testo-div > div > input, #tf {
+    display: inline-block;
+}
+
+#labels, #tf div, #creazione #testo-div > div > div, #creazione #chiudi, .cancel_task, #etichetta_testo, #footer{
+    text-align: center;
+}
+
+.cancel_task, #crea, #labels *, #tf div, #creazione #testo-div > div > div, #creazione #chiudi{
+    cursor: pointer;
+}
+
+#b, #g, #v, #r, #o, #y, #b:hover, #g:hover, #v:hover, #r:hover, #o:hover, #y:hover, .cancel_task, #creazione #testo-div > div > div, #chiudi {
+    transition: background-color 0.3s;
+}
+
+.cancel_task, #chiudi {
+    float: right;
 }
 
 /* PULSANTE QIUDI FINESTRA */
-#creazione #chiudi {
-    float: right;
+#chiudi {
     user-select: none;
-    cursor: pointer;
     width: 43px;
     padding: 10px;
-    text-align: center;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid;
+}
+
+#chiudi:hover {
+    color: rgb(74, 74, 74);
 }
 
 /* TITOLO FINESTRA */
@@ -32,11 +59,11 @@
 }
 
 /* ZONA SCRITTURA */
-#creazione #testo-div {
+#testo-div {
     width: 100%;
 }
 
-#creazione #testo-div > div {
+#testo-div > div {
     position: relative;
     box-shadow: 3px 3px 2px #434343;
 }
@@ -46,45 +73,58 @@
     width: 100%;
     height: 40px;
     font-size: 20px;
-    display: inline-block;
+    border: 2px solid black;
 }
 
 /* PULSANTE CANCELLA TESTO DALLA INPUT */
-#creazione #testo-div > div > div {
+#testo-div > div > div {
     position: absolute;
     top: 0;
     right: 0;
     width: 40px;
     height: 40px;
-    text-align: center;
     padding: 10px;
-    cursor: pointer;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#testo-div > div > div:hover {
+    background-color: #d3d3d3;
 }
 
 /* pulsanti scelta T or F */
 #tf {
-    display: inline-block;
     min-width: 50px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #tf div {
     height: 50px;
-    text-align: center;
     font-size: 30px;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 #t {
-    border: 3px solid #23c091;
-    color: #23c091;
+    color: #1cb486;
+    border: 3px solid currentColor;
     margin-bottom: 10px;
 }
 
+#t:hover {
+    color: #33ffc2;
+}
+
 #f {
-    border: 3px solid #f55027;
-    color: #f55027;
+    color: #b83d1e;
+    border: 3px solid currentColor;
+}
+
+#f:hover {
+    color: #ff7654;
 }
 
 /* LABEL DELLA FINESTRA CREAZIONE */
@@ -94,23 +134,20 @@
 }
 
 #labels {
-    display: inline-block;
     width: 100%;
     min-width: 130px;
     padding: 20px;
-    text-align: center;
 }
 
 #labels * {
     color: white;
     padding: 10px 15px;
     border-radius: 10px;
-    border: 1px solid black;
-    display: inline-block;
     margin: 5px;
-    cursor: pointer;
     box-shadow: 3px 3px 2px #434343;
 }
+
+
 
 #b {
     background-color: #5faee2;
@@ -131,13 +168,67 @@
     background-color: #8cc013;
 }
 
+/* :HOVER -------------------------------- */
+
+#b:hover {
+    background-color: #3174a0;
+}
+#g:hover {
+    background-color: #288a6c;
+}
+#v:hover {
+    background-color: #6e1392;
+}
+#r:hover {
+    background-color: #9c2382;
+}
+#o:hover {
+    background-color: #b0701b;
+}
+#y:hover {
+    background-color: #698f11;
+}
+
 /* CREA */
 
 #crea {
-    display: inline-block;
     background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 2px #434343;
-    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#crea:hover {
+    background-color: #d5d5d5;
+    transition: background-color 0.3s;
+}
+
+/* FOOTER */
+
+#nome_etichetta {
+    margin-left: 20px;
+}
+
+#etichetta_testo {
+    width: 100px;
+    height: 30px;
+}
+
+
+/* cancella pezzo dal task */
+
+.cancel_task {
+    background-color: #007bd3;
+    width: 30px;
+    height: 30px;
+    line-height: 100%;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+    margin-right: 5px;
+}
+
+.cancel_task:hover {
+    background-color: #51b7ff;
 }

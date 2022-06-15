@@ -88,12 +88,12 @@
     </main>
     
     <div id="creazione">
-        <div id="chiudi">X</div>
+        <div id="chiudi" title="Chiudi finestra">X</div>
         <h3>Crea nuovo Task</h3>
         <div id="testo-div">
             <p>Inserisci una fraze breve</p>
             <div>
-                <input id="testo" type="text" required minlength="5" maxlength="30">
+                <input id="testo" class="tes" type="text" minlength="5" maxlength="30" placeholder="Inserici qui la tua fraze ☺" title="Inserisci qui la fraze">
                 <div>//</div>
             </div>
         </div>
@@ -111,7 +111,11 @@
                 <div id="y">Sales</div>
             </div>
         </div>
-        <div id="crea">CREA</div>
+        <div id="footer">
+            <div id="crea">CREA</div>
+            <div id="nome_etichetta">Nome etichetta presonalizzata</div>
+            <input type="text" id="etichetta_testo" class="tes" minlength="3" maxlength="15" placeholder="Nome etichetta">
+        </div>
 
     </div>
     
