@@ -125,10 +125,10 @@ f.onclick = (() => {
 //--------------------------------------------------------------------------------------------------------
 
 // CREAIAMO LA FUNZIONE PER LA CREAZIONE DEL PULSANTE PER LA CANCELAZIONE DELLA RIGA
+let num_nome = 0;
 function pulsante_che_cancella(){
     // VARIABILE PER UNIFICARE IL NOSTRO PULSANTE
     // ATTENZIONE UTILE PER IDENTIFICARE IL COSA CREIAMO E CANCELIAMO
-    let num_nome = 0;
     num_nome++;
     
     // CREAZIONE DEL SPAN CHE SARA INSERITO NELLA RIGA CREATA
@@ -174,6 +174,10 @@ let att = input.getAttribute('minlength');
 // FUNZIONE PER LA CREAZIONE DELLA RIGA PER INSERIMENTO DENTRO AL NEW TASK
 function crea_riga_nuova() {
     if (input.value.length >= att && etichetta != null && stato_del_testo != null) {
+
+        // AGGIUNTA DI UN NUMERO PER LA DIMENSIONE DELLA FINESTRA CON DENTRO I FIGLI
+        aggiunta_num++;
+        
         pulsante_che_cancella();
         // CREARE UNA RIGA NUOVA
         let testo_nuovo = document.createElement('p');
@@ -196,12 +200,11 @@ function crea_riga_nuova() {
         if(nome_etichetta.value.length >= nome_etichetta.getAttribute('minlength')){
             et.textContent = nome_etichetta.value;
         }
+        
 
         // APPENDI UN FIGLIO AL NEW TASK
         insert_task.appendChild(testo_nuovo);
         
-        // AGGIUNTA DI UN NUMERO PER LA DIMENSIONE DELLA FINESTRA CON DENTRO I FIGLI
-        aggiunta_num++;
         insert_task.setAttribute('style', `--p:${aggiunta_num}`);
         
         // ALLA FINE CHIUSURA DELLA FINESTRA
@@ -216,4 +219,13 @@ function crea_riga_nuova() {
 crea.addEventListener('click', () => {
     crea_riga_nuova();
     console.log('click');
+});
+
+
+//-------------------------------------------------------
+
+let canc_testo = document.getElementById('canc_testo');
+
+canc_testo.addEventListener('click', ()=>{
+    input.value = '';
 });
